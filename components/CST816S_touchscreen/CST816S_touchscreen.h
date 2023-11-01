@@ -12,6 +12,9 @@ class CST816STouchScreen : public text_sensor::TextSensor, public Component {
   void setup() override;
   void loop() override;
   void dump_config() override;
+  void set_swap_x_y(bool);
+  void set_invert_x(bool);
+  void set_invert_y(bool);
 };
 
 }  // namespace cst816s_touchscreen

@@ -21,8 +21,20 @@ void CST816STouchScreen::setup() {
     touch.begin();
 }
 
-void CST816STouchScreen::dump_config() { 
+void CST816STouchScreen::dump_config() {
     ESP_LOGCONFIG(TAG, "CST816STouchScreen");
+}
+
+void CST816STouchScreen::set_swap_x_y(bool value){
+    touch.set_swap_x_y(value)
+}
+
+void CST816STouchScreen::set_invert_x(bool value){
+    touch.set_invert_x(value)
+}
+
+void CST816STouchScreen::set_invert_y(bool value){
+    touch.set_invert_y(value)
 }
 
 void CST816STouchScreen::loop() {
