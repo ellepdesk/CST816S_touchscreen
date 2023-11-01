@@ -17,6 +17,6 @@ def to_code(config):
     yield cg.register_component(var, config)
     cg.add_library(
             name="CST816S",
-            repository="https://github.com/GadgetFactory/CST816S.git",
+            repository="https://github.com/ellepdesk/CST816S.git",
             version="1.1.1",
         )
