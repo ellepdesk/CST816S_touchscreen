@@ -27,7 +27,7 @@ def to_code(config):
     cg.add_library(
             name="CST816S",
             repository="https://github.com/ellepdesk/CST816S.git",
-            version="1.1.1",
+            version="add-xy-controls",
         )
 
     if CONF_SWAP_X_Y in config:
