@@ -26,8 +26,8 @@ def to_code(config):
     yield cg.register_component(var, config)
     cg.add_library(
             name="CST816S",
-            repository="https://github.com/ellepdesk/CST816S.git",
-            version="add-xy-controls",
+            repository="https://github.com/ellepdesk/CST816S.git#add-xy-controls",
+            version="1.0.0",
         )
 
     if CONF_SWAP_X_Y in config:
